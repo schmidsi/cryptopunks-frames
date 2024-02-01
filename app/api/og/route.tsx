@@ -36,7 +36,7 @@ export async function GET() {
   });
   // const response = await request(``, document);
 
-  const response = await graphQLClient.request(document);
+  const response: any = await graphQLClient.request(document);
 
   console.log(response);
 
@@ -53,9 +53,15 @@ export async function GET() {
           textAlign: "center",
           justifyContent: "center",
           alignItems: "center",
+          display: "flex",
         }}
       >
-        👋 Hello
+        <img
+          src={response.sales[0].nft.metadata.svg}
+          height="200"
+          width="200"
+        />
+        <div>sdf</div>
       </div>
     ),
     {
