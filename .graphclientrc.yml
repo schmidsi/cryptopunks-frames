@@ -1,6 +1,0 @@
-sources:
-  - name: cryptopunks
-    handler:
-      graphql:
-        #  endpoint: https://gateway-arbitrum.network.thegraph.com/api/{env.THE_GRAPH_API_KEY}/subgraphs/id/2hTKKMwLsdfJm9N7gUeajkgg8sdJwky56Zpkvg8ZcyP8
-        endpoint: https://gateway-arbitrum.network.thegraph.com/api/25eb15e49c08702d60d90be66dd9a9a3/subgraphs/id/2hTKKMwLsdfJm9N7gUeajkgg8sdJwky56Zpkvg8ZcyP8
