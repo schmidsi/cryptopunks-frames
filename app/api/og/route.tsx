@@ -57,7 +57,6 @@ export async function GET() {
           }}
         >
           <img
-            style={{}}
             src={response.sales[0].nft.metadata.svg}
             height="400"
             width="400"
@@ -68,6 +67,9 @@ export async function GET() {
             </div>
             <div style={{ display: "flex" }}>
               Time: {new Date(response.sales[0].timestamp * 1000).toISOString()}
+            </div>
+            <div style={{ display: "flex", fontSize: "15", marginTop: 100 }}>
+              Last Update: {new Date().toISOString()}
             </div>
           </div>
         </div>
