@@ -45,8 +45,8 @@ export async function GET() {
         <div
           style={{
             fontSize: 40,
-            color: "black",
-            background: "white",
+            color: "white",
+            background: "#638596",
             width: "100%",
             height: "100%",
             padding: "50px 200px",
@@ -57,9 +57,10 @@ export async function GET() {
           }}
         >
           <img
+            style={{}}
             src={response.sales[0].nft.metadata.svg}
-            height="200"
-            width="200"
+            height="400"
+            width="400"
           />
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ display: "flex" }}>
