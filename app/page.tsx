@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Farcaster CryptoPunks The Graph Frame",
@@ -26,8 +27,20 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <img src="/api/og" />
+      <div className="z-10 max-w-5xl w-full items-center justify-between lg:flex ">
+        <p className="mb-10">
+          <img src="/api/og" />
+        </p>
+        <p className="mb-10">Refresh browser to refresh image</p>
+        <p className="mb-10">
+          Source code:{" "}
+          <Link
+            href="https://github.com/schmidsi/cryptopunks-frames"
+            className="underline"
+          >
+            github.com/schmidsi/cryptopunks-frames
+          </Link>
+        </p>
       </div>
     </main>
   );
