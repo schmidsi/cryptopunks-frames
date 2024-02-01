@@ -7,19 +7,19 @@ export const metadata: Metadata = {
   description: "Powered by The Graph",
   openGraph: {
     images: [
-      `https://${
-        process.env.NEXT_PUBLIC_VERCEL_URL
+      `${
+        process.env.NEXT_PUBLIC_DOMAIN
       }/api/og?timestamp=${new Date().getTime()}`,
     ],
   },
   other: {
     "fc:frame": "vNext",
-    "fc:frame:image": `https://${
-      process.env.NEXT_PUBLIC_VERCEL_URL
+    "fc:frame:image": `${
+      process.env.NEXT_PUBLIC_DOMAIN
     }/api/og?timestamp=${new Date().getTime()}`,
     "fc:frame:button:1": "Refresh",
-    "fc:frame:post_url": `https://${
-      process.env.NEXT_PUBLIC_VERCEL_URL
+    "fc:frame:post_url": `${
+      process.env.NEXT_PUBLIC_DOMAIN
     }?timestamp=${new Date().getTime()}`,
   },
 };
