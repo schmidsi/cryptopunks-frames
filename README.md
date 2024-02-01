@@ -10,4 +10,5 @@
 - Nader's example code: https://github.com/dabit3/cross-platform-heyportals
 
 - Image dimensions: 1.91:1 -> 573:300
+  - Recommended OG image size: 1200x630 pixels
 - Image URLs need to be absolute paths

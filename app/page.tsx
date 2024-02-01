@@ -5,13 +5,11 @@ export const metadata: Metadata = {
   title: "Farcaster CryptoPunks The Graph Frame",
   description: "Powered by The Graph",
   openGraph: {
-    images: [
-      `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/img/hello-world.png`,
-    ],
+    images: [`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/og`],
   },
   other: {
     "fc:frame": "vNext",
-    "fc:frame:image": `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/img/hello-world.png`,
+    "fc:frame:image": `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/og`,
     "fc:frame:button:1": "Green",
     "fc:frame:button:2": "Purple",
     "fc:frame:button:3": "Red",
