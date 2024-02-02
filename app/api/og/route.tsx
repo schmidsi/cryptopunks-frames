@@ -1,10 +1,14 @@
-import { request, GraphQLClient, gql } from "graphql-request";
+import { GraphQLClient, gql } from "graphql-request";
 import { formatEther } from "viem";
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
 const GRAPHQL_ENDPOINT = `https://gateway-arbitrum.network.thegraph.com/api/${process.env.THE_GRAPH_API_KEY}/subgraphs/id/2hTKKMwLsdfJm9N7gUeajkgg8sdJwky56Zpkvg8ZcyP8`;
+
+// const noCacheFetch = async (url: string, options: RequestInit) =>
+//   fetch(url, options);
 
 export async function GET() {
   const document = gql`
@@ -35,6 +39,7 @@ export async function GET() {
 
   const graphQLClient = new GraphQLClient(GRAPHQL_ENDPOINT, {
     fetch,
+    cache: "no-store",
   });
 
   const response: any = await graphQLClient.request(document);
